@@ -7,9 +7,11 @@ public class Server{
 		DataInputStream din=new DataInputStream(s.getInputStream());
 		int a1=din.read();
 		int a2=din.read();
-		int op=din.read();
+		
 		DataOutputStream dout=new DataOutputStream(s.getOutputStream());
-		System.out.println("Operations Performed Successfully!!\nCheck out the results on client side.");
+	
+		while(true){
+		int op=din.read();
 		if(op==1){
 			int sum=a1+a2;
 			dout.write(sum);
@@ -30,6 +32,11 @@ public class Server{
 			dout.write(div);
 			dout.flush();
 		}
+		else if(op==5){
+			break;
+		}
+		
+		}
 		
 		
 		
@@ -41,8 +48,8 @@ public class Server{
 		
 		
 		//String str=(String)din.readUTF();
-		
-		s.close();	
+		//s.close();
+			
 
 								
 	}

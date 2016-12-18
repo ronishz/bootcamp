@@ -6,7 +6,6 @@ public class Client{
 		Socket s = new Socket("localhost",1234) ;
 		DataOutputStream dout=new DataOutputStream(s.getOutputStream());
 
-
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter number 1:	");
 		int a1=sc.nextInt();
@@ -17,20 +16,19 @@ public class Client{
 		//String s1=sc.nextLine();
 		dout.write(a2);
 		dout.flush();
-		System.out.println("Operations:\n1.Addition\n2.Subtraction\n3.Multiplication\n4.Division");
+		while(true){
+		System.out.println("Operations:\n1.Addition\n2.Subtraction\n3.Multiplication\n4.Division\n5.Exit");
 		int op=sc.nextInt();
+		if(op==5){
+			break;
+		}
 		dout.write(op);
 		DataInputStream din=new DataInputStream(s.getInputStream());
 		int sum=din.read();
 		System.out.println("Result:	"+sum);
-		//int sub=din.read();
-		//System.out.println("Subtraction:	"+sub);
-		//int mul=din.read();
-		//System.out.println("Multiplication:	"+mul);
-		//int div=din.read();
-		//System.out.println("Division:	"+div);
-		s.close();		
+		}
 		
+		s.close();
 
 					
 	}
