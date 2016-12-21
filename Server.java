@@ -1,14 +1,35 @@
 import java.io.*;
 import java.net.*;
-public class Server{
+import java.util.*;
+public class Server extends Thread{
+	public static ServerSocket svr=null;
+	public static Socket s=null;
+
+	public Server(){
+		try{
+		this.svr=new ServerSocket(1234);
+		this.s = svr.accept();
+		}catch(IOException e){};
+	}
+
 	public static void main(String[] args) throws Exception{
-		ServerSocket svr=new ServerSocket(1234);
-		Socket s = svr.accept();
-		DataInputStream din=new DataInputStream(s.getInputStream());
-		int a1=din.read();
-		int a2=din.read();
+		//svr=new ServerSocket(1234);
+		//s = svr.accept();
+	Server server=new Server();
+		server.start();
 		
-		DataOutputStream dout=new DataOutputStream(s.getOutputStream());
+		
+	}
+		
+
+	public void run(){
+		try{
+	
+			DataInputStream din=new DataInputStream(s.getInputStream());
+			int a1=din.read();
+			int a2=din.read();
+		
+			DataOutputStream dout=new DataOutputStream(s.getOutputStream());
 	
 		while(true){
 		int op=din.read();
@@ -40,7 +61,10 @@ public class Server{
 		
 		
 		
-		
+		}
+		catch(IOException e){
+			System.out.println("Exception found");
+		}
 		
 		
 		
@@ -51,6 +75,6 @@ public class Server{
 		//s.close();
 			
 
-								
-	}
+		}						
+	
 }
