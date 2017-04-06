@@ -1,0 +1,86 @@
+--- Thread 0, Filter: TCP ---
+Packet: 0
+IP: version = 4, len = 60, src = 172.16.132.168, dst = 216.58.220.174
+----------
+TCP: sport = 60849, dport = 443, seq = 2365641678, ack = 0
+----------
+Packet: 1
+IP: version = 4, len = 52, src = 216.58.220.174, dst = 172.16.132.168
+----------
+TCP: sport = 443, dport = 60849, seq = 342455594, ack = 2365641679
+----------
+Packet: 2
+IP: version = 4, len = 40, src = 172.16.132.168, dst = 216.58.220.174
+----------
+TCP: sport = 60849, dport = 443, seq = 2365641679, ack = 342455595
+----------
+--- Thread 1, Filter: UDP ---
+Packet: 0
+IP: version = 4, len = 78, src = 172.16.132.184, dst = 172.16.133.255
+----------
+UDP: sport = 137, dport = 137, len = 58
+----------
+Packet: 1
+IP: version = 4, len = 164, src = 172.16.132.5, dst = 239.255.255.250
+----------
+UDP: sport = 54546, dport = 1900, len = 144
+----------
+Raw: payload = M-SEARCH * HTTP/1.1
+HOST: 239.255.255.250:1900
+MAN: "ssdp:discover"
+MX: 10
+ST: urn:schemas-upnp-
+----------
+Packet: 2
+IP: version = 4, len = 164, src = 172.16.132.5, dst = 239.255.255.250
+----------
+UDP: sport = 54546, dport = 1900, len = 144
+----------
+Raw: payload = M-SEARCH * HTTP/1.1
+HOST: 239.255.255.250:1900
+MAN: "ssdp:discover"
+MX: 10
+ST: urn:schemas-upnp-
+----------
+--- Thread 2, Filter: ICMP ---
+Packet: 0
+IP: version = 4, len = 105, src = 172.16.132.168, dst = 172.20.1.51
+----------
+ICMP: type = 3, code = 3, seq = None
+----------
+Packet: 1
+IP: version = 4, len = 133, src = 172.16.132.168, dst = 172.20.1.51
+----------
+ICMP: type = 3, code = 3, seq = None
+----------
+Packet: 2
+IP: version = 4, len = 126, src = 172.16.132.168, dst = 172.20.1.51
+----------
+ICMP: type = 3, code = 3, seq = None
+----------
+--- Thread 3, Filter: TCP PORT 80 ---
+Packet: 0
+IP: version = 4, len = 60, src = 172.16.132.168, dst = 103.228.50.195
+----------
+TCP: sport = 35701, dport = 80, seq = 2669861856, ack = 0
+----------
+Packet: 1
+IP: version = 4, len = 60, src = 172.16.132.168, dst = 103.228.50.195
+----------
+TCP: sport = 35702, dport = 80, seq = 1630991174, ack = 0
+----------
+Packet: 2
+IP: version = 4, len = 52, src = 103.228.50.195, dst = 172.16.132.168
+----------
+TCP: sport = 80, dport = 35702, seq = 3641391537, ack = 1630991175
+----------
+--- Thread 4, Filter: ARP ---
+Packet: 0
+ARP: hwsrc = 00:18:f8:ca:4d:63, psrc = 172.16.132.111
+----------
+Packet: 1
+ARP: hwsrc = 00:18:f8:ca:4d:63, psrc = 172.16.132.111
+----------
+Packet: 2
+ARP: hwsrc = 00:18:f8:ca:4d:63, psrc = 172.16.132.111
+----------

@@ -1,0 +1,101 @@
+student@B04L03100:~$ gcc -o ftpClient ftpClient.c 
+student@B04L03100:~$ ./ftpClient 
+Enter a choice:
+1- get
+2- put
+3- pwd
+4- ls
+5- cd
+6- quit
+1
+Enter filename to get: file 
+hello
+Enter a choice:
+1- get
+2- put
+3- pwd
+4- ls
+5- cd
+6- quit
+2
+Enter filename to put to server: file
+File stored successfully
+Enter a choice:
+1- get
+2- put
+3- pwd
+4- ls
+5- cd
+6- quit
+3
+The path of the remote directory is: /home/student
+
+Enter a choice:
+1- get
+2- put
+3- pwd
+4- ls
+5- cd
+6- quit
+4
+The remote directory listing is as follows:
+Desktop
+Documents
+Downloads
+file
+file1
+file11
+file111
+file1111
+file11111
+file111111
+ftpClient
+ftpClient.c
+ftpServer
+ftpServer.c
+libgraph-1.0.2
+Music
+peoples
+Pictures
+Public
+R
+rstudio
+rstudio-0.99.485
+rstudio-1.0.136-amd64
+Templates
+temps.txt
+temp.txt
+Videos
+workspace
+Enter a choice:
+1- get
+2- put
+3- pwd
+4- ls
+5- cd
+6- quit
+5
+Enter the path to change the remote directory: Downloads
+Remote directory successfully changed
+Enter a choice:
+1- get
+2- put
+3- pwd
+4- ls
+5- cd
+6- quit
+3
+The path of the remote directory is: /home/student/Downloads
+
+Enter a choice:
+1- get
+2- put
+3- pwd
+4- ls
+5- cd
+6- quit
+6
+Server closed
+Quitting..
+student@B04L03100:~$ 
+
