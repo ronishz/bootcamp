@@ -1,0 +1,234 @@
+OUTPUT:
+
+shruti@ubuntu:~$ g++ bayes.cpp
+shruti@ubuntu:~$ ./a.out
+
+ Enter number of records in the table : 10
+
+ Enter record for id 1 of table : 
+
+ Age : 1.Infant  2.Young  3.Old
+ Enter : 2
+
+ Income: 1.High  2.Medium  3.Low
+ Enter : 3
+
+ Whether the person is student?  1.Yes  0.No
+ Enter : 1
+
+ Credit Ratings:1.Low  2.Fair  3.High
+ Enter : 2
+
+ Whether the person buys the computer?  1.Yes  0.No
+ Enter : 1
+
+ Enter record for id 2 of table : 
+
+ Age : 1.Infant  2.Young  3.Old
+ Enter : 2
+
+ Income: 1.High  2.Medium  3.Low
+ Enter : 2
+
+ Whether the person is student?  1.Yes  0.No
+ Enter : 1
+
+ Credit Ratings:1.Low  2.Fair  3.High
+ Enter : 2
+
+ Whether the person buys the computer?  1.Yes  0.No
+ Enter : 1
+
+ Enter record for id 3 of table : 
+
+ Age : 1.Infant  2.Young  3.Old
+ Enter : 3
+
+ Income: 1.High  2.Medium  3.Low
+ Enter : 3
+
+ Whether the person is student?  1.Yes  0.No
+ Enter : 0
+
+ Credit Ratings:1.Low  2.Fair  3.High
+ Enter : 3
+
+ Whether the person buys the computer?  1.Yes  0.No
+ Enter : 0
+
+ Enter record for id 4 of table : 
+
+ Age : 1.Infant  2.Young  3.Old
+ Enter : 1
+
+ Income: 1.High  2.Medium  3.Low
+ Enter : 1
+
+ Whether the person is student?  1.Yes  0.No
+ Enter : 1
+
+ Credit Ratings:1.Low  2.Fair  3.High
+ Enter : 1
+
+ Whether the person buys the computer?  1.Yes  0.No
+ Enter : 1
+
+ Enter record for id 5 of table : 
+
+ Age : 1.Infant  2.Young  3.Old
+ Enter : 3
+
+ Income: 1.High  2.Medium  3.Low
+ Enter : 2
+
+ Whether the person is student?  1.Yes  0.No
+ Enter : 0
+
+ Credit Ratings:1.Low  2.Fair  3.High
+ Enter : 3
+
+ Whether the person buys the computer?  1.Yes  0.No
+ Enter : 0
+
+ Enter record for id 6 of table : 
+
+ Age : 1.Infant  2.Young  3.Old
+ Enter : 2
+
+ Income: 1.High  2.Medium  3.Low
+ Enter : 3
+
+ Whether the person is student?  1.Yes  0.No
+ Enter : 0
+
+ Credit Ratings:1.Low  2.Fair  3.High
+ Enter : 1
+
+ Whether the person buys the computer?  1.Yes  0.No
+ Enter : 1
+
+ Enter record for id 7 of table : 
+
+ Age : 1.Infant  2.Young  3.Old
+ Enter : 3
+
+ Income: 1.High  2.Medium  3.Low
+ Enter : 1
+
+ Whether the person is student?  1.Yes  0.No
+ Enter : 1
+
+ Credit Ratings:1.Low  2.Fair  3.High
+ Enter : 2
+
+ Whether the person buys the computer?  1.Yes  0.No
+ Enter : 1
+
+ Enter record for id 8 of table : 
+
+ Age : 1.Infant  2.Young  3.Old
+ Enter : 1
+
+ Income: 1.High  2.Medium  3.Low
+ Enter : 3
+
+ Whether the person is student?  1.Yes  0.No
+ Enter : 0
+
+ Credit Ratings:1.Low  2.Fair  3.High
+ Enter : 3
+
+ Whether the person buys the computer?  1.Yes  0.No
+ Enter : 1
+
+ Enter record for id 9 of table : 
+
+ Age : 1.Infant  2.Young  3.Old
+ Enter : 2
+
+ Income: 1.High  2.Medium  3.Low
+ Enter : 1
+
+ Whether the person is student?  1.Yes  0.No
+ Enter : 1
+
+ Credit Ratings:1.Low  2.Fair  3.High
+ Enter : 2
+
+ Whether the person buys the computer?  1.Yes  0.No
+ Enter : 1
+
+ Enter record for id 10 of table : 
+
+ Age : 1.Infant  2.Young  3.Old
+ Enter : 1
+
+ Income: 1.High  2.Medium  3.Low
+ Enter : 2
+
+ Whether the person is student?  1.Yes  0.No
+ Enter : 1
+
+ Credit Ratings:1.Low  2.Fair  3.High
+ Enter : 1
+
+ Whether the person buys the computer?  1.Yes  0.No
+ Enter : 0
+| ID	| Age	     | Income  |Student| Credit Rating | Buy	|
+----------------------------------------------------------
+| 1	| Young	| High	| Yes	| Fair		| Yes	| 
+| 2	| Young	| Medium   | Yes	| Fair		| Yes	| 
+| 3	| Old	     | High	| No	| High		| No	| 
+| 4	| Infant   | Low	     | Yes	| Low		     | Yes	| 
+| 5	| Old	     | Medium   | No	| High		| No	| 
+| 6	| Young	| High	| No	| Low		     | Yes	| 
+| 7	| Old	     | Low	     | Yes	| Fair		| Yes	| 
+| 8	| Infant   | High	| No	| High		| Yes	| 
+| 9	| Young	| Low	     | Yes	| Fair		| Yes	| 
+| 10	| Infant   | Medium   | Yes	| Low		     | No	| 
+
+ P(buy Computer =  Yes) = 0.7
+ P(buy Computer = No) = 0.3
+
+ Enter selection critera for conditional probability : 
+
+ 1.Buy Computer 
+ 0.Not Buy Computer : 1
+
+ 1.Age  2.Income  3.Student  4.Credit Rating : 1
+
+ Enter Field of Age: 1.Infant  2.Young  3.Old : 2
+ P(Age = Young | buys Computer = Yes) = 0.571429
+
+ Press Y for more conditional probabilities : Y
+
+ Enter selection critera for conditional probability : 
+
+ 1.Buy Computer 
+ 0.Not Buy Computer : 1
+
+ 1.Age  2.Income  3.Student  4.Credit Rating : 3
+
+ Enter field of Student: 1.Yes  0.No : 1
+ P(Student = Yes | buys Computer = Yes) = 0.714286
+
+ Press Y for more conditional probabilities : Y
+
+ Enter selection critera for conditional probability : 
+
+ 1.Buy Computer 
+ 0.Not Buy Computer : 0
+
+ 1.Age  2.Income  3.Student  4.Credit Rating : 4
+
+ Enter Field of Credit Ratings: 1.Low  2.Fair  3.High : 1
+ P(Credit Ratings = Low | buys Computer = No) = 0.333333
+
+ Press Y for more conditional probabilities : N
+
+ P(X | buys Computer = Yes) = 0.408163
+ P(X | buys Computer = No) = 0.333333
+
+ P(buys Computer = Yes) = 0.285714
+ P(buys Computer = No) = 0.1
+shruti@ubuntu:~$
