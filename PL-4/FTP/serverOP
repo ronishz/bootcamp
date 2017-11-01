@@ -1,5 +1,0 @@
-student@B04L03100:~$ gcc -o ftpServer ftpServer.c
-student@B04L03100:~$ ./ftpServer
-FTP server quitting..
-student@B04L03100:~$ 
-
