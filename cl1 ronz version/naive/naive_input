@@ -1,0 +1,15 @@
+age(youth/mid-age/old)  income(high/medium/low)  student(yes/no)  credit(fair/excel)    Buys-computer
+youth high no fair no
+youth high no excel no
+mid-age high no fair yes
+old medium no fair yes
+old low yes fair yes
+old low yes excel no
+mid-age low yes excel yes
+youth medium no fair no
+youth low yes fair yes
+old medium yes fair yes
+youth medium yes excel yes
+mid-age medium no excel yes
+mid-age high yes fair yes
+old medium no excel no
